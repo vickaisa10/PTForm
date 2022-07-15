@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">PTform</string>
+    <string name="contraseña">Contraseña:</string>
+    <string name="nombre">Nombre:</string>
+    <string name="logo_pt_form">Logo PT Form</string>
+    <string name="nuevo_formulario">Diligenciar nuevo formulario</string>
+    <string name="visualizar_antiguos">Visualizar formularios antiguos</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="usuario">Usuario</string>
+    <string name="usuario_registro">Usuario:</string>
+    <string name="correo">Correo:</string>
+    <string name="nombre2">Nombre:</string>
+    <string name="apellido">Apellido:</string>
+    <string name="ingrese_su_usuario">Ingrese su usuario</string>
+    <string name="ingrese_su_contrase_a">Ingrese su contraseña</string>
+    <string name="registrarse2">Registrarse</string>
+    <string name="logo_pt_form2">Logo PT Form</string>
+    <string name="ingrese_su_correo">Ingrese su correo</string>
+    <string name="ingrese_su_apellido">Ingrese su apellido</string>
+    <string name="ingrese_su_nombre">Ingrese su nombre</string>
+    <string name="expediente">Expediente:</string>
+    <string name="operador">Operador:</string>
+    <string name="levantamiento_info">Levantamiento de información</string>
+    <string name="proyecto">Proyecto:</string>
+    <string name="tipoinfra">Tipo_infra:</string>
+    <string name="id_infra_pt">Id_infra_PT:</string>
+    <string name="caracter">Caracter:</string>
+    <string name="estado">Estado:</string>
+    <string name="adecuacion">Adecuacion:</string>
+    <string name="tipoadec">Tipo_Adec:</string>
+    <string name="calidad">Calidad:</string>
+    <string name="requ">Requ_ocup:</string>
+    <string name="observ">Observaciones:</string>
+    <string name="tomar">Tomar Fotografía</string>
+    <string name="expededit"># de expediente</string>
+    <string name="operadoredit">Nombre operador</string>
+    <string name="proyectoedit">Nombre proyecto</string>
+    <string name="tipoedit">Tipo infraestructura</string>
+    <string name="idinfra">Id infraestructura</string>
+    <string name="caracteristica">Ingrese característica</string>
+    <string name="tipoadecu">Tipo de adecuación</string>
+    <string name="observacion">Observaciones</string>
+    <string name="imagenPunto">Fotografia de la imagen tomada en el punto</string>
+    <string name="tomarfoto">Tomar fotografia</string>
+    <string name="registrarCoordenadas">Registrar coordenadas</string>
+    <string name="Este">Este:</string>
+    <string name="Norte">Norte:</string>
+    <string name="esteTXT">Coordenada X</string>
+    <string name="norteTXT">Coordenada Y</string>
+    <string name="elabora">Elabora:</string>
+    <string name="nomproyecto">Proyecto:</string>
+    <string name="fecha">Fecha:</string>
+    <string name="fechaEla">Fecha de registro</string>
+    <string name="nomElabora">Persona que elabora</string>
+    <string name="nombreproyecto">Nombre proyecto</string>
+    <string name="iniciar">Guardar e Iniciar</string>
+    <string name="guardar">Guardar</string>
+    <string name="nuevopunto">Tomar nuevo punto</string>
+    <string name="visualizarpuntos">Visualizar puntos en el mapa</string>
+    <string name="exportar">Exportar puntos</string>
+    <string-array name="dom_estado">
+        <item>Existente</item>
+        <item>Proyectado</item>
+    </string-array>
+    <string-array name="dom_adecu">
+        <item>Si</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="dom_calidad">
+        <item>Muy bueno</item>
+        <item>Bueno</item>
+        <item>Regular</item>
+        <item>Malo</item>
+    </string-array>
+    <string name="title_activity_visualizacion">visualizacion</string>
+    <string name="title_activity_maps">Maps</string>
+
+</resources>
