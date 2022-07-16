@@ -50,14 +50,8 @@ public class Levantamiento extends AppCompatActivity {
 
         coord = (Button) findViewById(R.id.btnRegistrar);
 
-        tomarF.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        tomarF.setOnClickListener(view -> capturarDAtos ());
 
-                capturarDAtos ();
-
-            }
-        });
         coord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

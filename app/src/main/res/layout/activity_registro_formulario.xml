@@ -63,8 +63,8 @@
         app:layout_constraintTop_toBottomOf="@+id/lblElabora"
         tools:ignore="TextViewEdits" />
 
-    <TextView
-        android:id="@+id/lblFecha"
+    <Button
+        android:id="@+id/btnFecha"
         android:layout_width="100dp"
         android:layout_height="48dp"
         android:layout_marginStart="44dp"
@@ -87,46 +87,46 @@
     <EditText
         android:id="@+id/txtElabora"
         android:layout_width="wrap_content"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="44dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/nomElabora"
+        android:inputType="text"
         android:minHeight="48dp"
         android:textColorHint="#757575"
-        android:inputType="text"
         app:layout_constraintStart_toEndOf="@+id/lblElabora"
         app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
 
     <EditText
         android:id="@+id/txtNomProyecto"
         android:layout_width="wrap_content"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="15dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/nombreproyecto"
+        android:inputType="text"
         android:minHeight="48dp"
         android:textColorHint="#757575"
-        android:inputType="text"
         app:layout_constraintStart_toEndOf="@+id/lblNomProyecto"
         app:layout_constraintTop_toBottomOf="@+id/txtElabora" />
 
     <EditText
         android:id="@+id/txtFecha"
         android:layout_width="wrap_content"
-        android:layout_height="45dp"
+        android:layout_height="48dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="15dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/fechaEla"
+        android:inputType="date"
         android:minHeight="48dp"
         android:textColorHint="#757575"
-        android:inputType="date"
-        app:layout_constraintStart_toEndOf="@+id/lblFecha"
+        app:layout_constraintStart_toEndOf="@+id/btnFecha"
         app:layout_constraintTop_toBottomOf="@+id/txtNomProyecto" />
 
     <Button
@@ -134,13 +134,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="87dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="87dp"
         android:backgroundTint="#62B6CB"
+        android:onClick="ini"
         android:text="@string/iniciar"
         android:textColor="#000000"
-        android:onClick="ini"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtFecha" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
