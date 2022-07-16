@@ -4,7 +4,6 @@ import androidx.fragment.app.FragmentActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import com.example.ptform.BD.ClaseGlobal;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -59,16 +58,16 @@ public class Maps extends FragmentActivity implements OnMapReadyCallback {
                 ClaseGlobal objGlobalExtraer = (ClaseGlobal)getApplicationContext();
                 esteInt  =objGlobalExtraer.getEste();
                 norteInt  =objGlobalExtraer.getNorte();
-            }catch (Exception o ){
-
-            }
-
+            }catch (Exception o ){ }
         }
 
 
-        // Add a marker in Sydney and move the camera
+
+        // Se agrega el marcador del punto en la vista del mapa
         LatLng sydney = new LatLng(esteInt,norteInt);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Colombia"));
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Punto registrado"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+        mMap.getUiSettings().setCompassEnabled(true);
     }
 }
