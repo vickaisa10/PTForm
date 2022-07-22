@@ -66,7 +66,7 @@ class TomarFotografia : AppCompatActivity() {
 
         //Se crea un mensaje que le avise al usuario que efectivamente se pudo guardar la imagen en la galeria
         Toast.makeText(this, "La imagen fue guardada exitosamente en la Galeria",
-        Toast.LENGTH_LONG).show()
+        Toast.LENGTH_SHORT).show()
     }
 
     private fun createContent(): ContentValues {

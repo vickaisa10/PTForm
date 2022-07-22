@@ -8,8 +8,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="-65dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-326dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -18,9 +18,9 @@
 
             <TextView
                 android:id="@+id/lblExpdiente"
-                android:layout_width="80dp"
+                android:layout_width="100dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="36dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="60dp"
                 android:background="#BEE9E8"
                 android:cursorVisible="false"
@@ -28,7 +28,6 @@
                 android:freezesText="false"
                 android:gravity="center"
                 android:linksClickable="false"
-                android:onClick="tom"
                 android:text="@string/expediente"
                 android:textAlignment="center"
                 android:textAllCaps="false"
@@ -40,9 +39,9 @@
 
             <TextView
                 android:id="@+id/lblOperador"
-                android:layout_width="80dp"
+                android:layout_width="100dp"
                 android:layout_height="45dp"
-                android:layout_marginStart="36dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:background="#BEE9E8"
                 android:cursorVisible="false"
@@ -79,9 +78,9 @@
 
             <TextView
                 android:id="@+id/lblProyecto"
-                android:layout_width="80dp"
+                android:layout_width="100dp"
                 android:layout_height="45dp"
-                android:layout_marginStart="36dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:background="#BEE9E8"
                 android:cursorVisible="false"
@@ -100,9 +99,9 @@
 
             <TextView
                 android:id="@+id/lblTipoinfra"
-                android:layout_width="80dp"
+                android:layout_width="100dp"
                 android:layout_height="45dp"
-                android:layout_marginStart="36dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:background="#BEE9E8"
                 android:cursorVisible="false"
@@ -121,9 +120,9 @@
 
             <TextView
                 android:id="@+id/lblIdinfrapt"
-                android:layout_width="80dp"
+                android:layout_width="100dp"
                 android:layout_height="45dp"
-                android:layout_marginStart="36dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:background="#BEE9E8"
                 android:cursorVisible="false"
@@ -142,9 +141,9 @@
 
             <TextView
                 android:id="@+id/lblCaracter"
-                android:layout_width="80dp"
+                android:layout_width="100dp"
                 android:layout_height="45dp"
-                android:layout_marginStart="36dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:background="#BEE9E8"
                 android:cursorVisible="false"
@@ -163,9 +162,9 @@
 
             <TextView
                 android:id="@+id/lblEstado"
-                android:layout_width="80dp"
+                android:layout_width="100dp"
                 android:layout_height="45dp"
-                android:layout_marginStart="36dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:background="#BEE9E8"
                 android:cursorVisible="false"
@@ -184,9 +183,9 @@
 
             <TextView
                 android:id="@+id/lblAdecuacion"
-                android:layout_width="80dp"
+                android:layout_width="100dp"
                 android:layout_height="45dp"
-                android:layout_marginStart="36dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:background="#BEE9E8"
                 android:cursorVisible="false"
@@ -205,9 +204,9 @@
 
             <TextView
                 android:id="@+id/lblTipoadec"
-                android:layout_width="80dp"
+                android:layout_width="100dp"
                 android:layout_height="45dp"
-                android:layout_marginStart="36dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:background="#BEE9E8"
                 android:cursorVisible="false"
@@ -226,9 +225,9 @@
 
             <TextView
                 android:id="@+id/lblCalidad"
-                android:layout_width="80dp"
+                android:layout_width="100dp"
                 android:layout_height="45dp"
-                android:layout_marginStart="36dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:background="#BEE9E8"
                 android:cursorVisible="false"
@@ -247,9 +246,9 @@
 
             <TextView
                 android:id="@+id/lblObserv"
-                android:layout_width="80dp"
+                android:layout_width="100dp"
                 android:layout_height="45dp"
-                android:layout_marginStart="36dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:background="#BEE9E8"
                 android:cursorVisible="false"
@@ -268,9 +267,9 @@
 
             <TextView
                 android:id="@+id/lblEste"
-                android:layout_width="80dp"
+                android:layout_width="100dp"
                 android:layout_height="45dp"
-                android:layout_marginStart="36dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:background="#BEE9E8"
                 android:cursorVisible="false"
@@ -289,9 +288,9 @@
 
             <TextView
                 android:id="@+id/lblNorte"
-                android:layout_width="80dp"
+                android:layout_width="100dp"
                 android:layout_height="45dp"
-                android:layout_marginStart="36dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:background="#BEE9E8"
                 android:cursorVisible="false"
@@ -314,13 +313,13 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="38dp"
                 android:layout_marginTop="60dp"
-                android:layout_marginEnd="48dp"
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/expededit"
+                android:inputType="text"
+                android:maxLength="20"
                 android:minHeight="48dp"
                 android:textColorHint="#757575"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/lblExpdiente"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -330,13 +329,13 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="38dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="48dp"
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/tipoedit"
+                android:inputType="text"
+                android:maxLength="50"
                 android:minHeight="48dp"
                 android:textColorHint="#757575"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/lblTipoinfra"
                 app:layout_constraintTop_toBottomOf="@+id/txtProyecto" />
 
@@ -346,13 +345,13 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="38dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="48dp"
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/proyectoedit"
+                android:inputType="text"
+                android:maxLength="200"
                 android:minHeight="48dp"
                 android:textColorHint="#757575"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/lblProyecto"
                 app:layout_constraintTop_toBottomOf="@+id/txtOperador" />
 
@@ -362,13 +361,13 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="38dp"
                 android:layout_marginTop="4dp"
-                android:layout_marginEnd="48dp"
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/operadoredit"
+                android:inputType="text"
+                android:maxLength="100"
                 android:minHeight="48dp"
                 android:textColorHint="#757575"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/lblOperador"
                 app:layout_constraintTop_toBottomOf="@+id/txtExpediente" />
 
@@ -378,13 +377,13 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="38dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="48dp"
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/idinfra"
+                android:inputType="text"
+                android:maxLength="20"
                 android:minHeight="48dp"
                 android:textColorHint="#757575"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/lblIdinfrapt"
                 app:layout_constraintTop_toBottomOf="@+id/txtTipoinfra" />
 
@@ -394,14 +393,13 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="38dp"
                 android:layout_marginTop="4dp"
-                android:layout_marginEnd="44dp"
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/caracteristica"
+                android:inputType="text"
+                android:maxLength="255"
                 android:minHeight="48dp"
                 android:textColorHint="#757575"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/lblCaracter"
                 app:layout_constraintTop_toBottomOf="@+id/txtIdinfra" />
 
@@ -411,14 +409,13 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="38dp"
                 android:layout_marginTop="4dp"
-                android:layout_marginEnd="44dp"
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/esteTXT"
+                android:inputType="numberDecimal"
+                android:maxLength="8"
                 android:minHeight="48dp"
                 android:textColorHint="#757575"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/lblCaracter"
                 app:layout_constraintTop_toBottomOf="@+id/txtObervaciones" />
 
@@ -428,14 +425,13 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="38dp"
                 android:layout_marginTop="4dp"
-                android:layout_marginEnd="44dp"
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/norteTXT"
+                android:inputType="numberDecimal"
+                android:maxLength="8"
                 android:minHeight="48dp"
                 android:textColorHint="#757575"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/lblCaracter"
                 app:layout_constraintTop_toBottomOf="@+id/txtEste" />
 
@@ -463,7 +459,6 @@
                 android:backgroundTint="#62B6CB"
                 android:text="@string/tomar"
                 android:textColor="#000000"
-                android:onClick="tom"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btnRegistrar" />
@@ -474,11 +469,8 @@
                 android:layout_height="48dp"
                 android:layout_marginStart="38dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="44dp"
                 android:entries="@array/dom_estado"
                 android:splitMotionEvents="false"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/lblEstado"
                 app:layout_constraintTop_toBottomOf="@+id/txtCaracter" />
 
@@ -488,10 +480,7 @@
                 android:layout_height="48dp"
                 android:layout_marginStart="38dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="44dp"
                 android:entries="@array/dom_adecu"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/lblAdecuacion"
                 app:layout_constraintTop_toBottomOf="@+id/spiEstado" />
 
@@ -501,13 +490,13 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="38dp"
                 android:layout_marginTop="4dp"
-                android:layout_marginEnd="48dp"
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/tipoadecu"
+                android:inputType="text"
+                android:maxLength="50"
                 android:minHeight="48dp"
                 android:textColorHint="#757575"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/lblTipoadec"
                 app:layout_constraintTop_toBottomOf="@+id/spiAdecuacion" />
 
@@ -517,10 +506,7 @@
                 android:layout_height="48dp"
                 android:layout_marginStart="38dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="44dp"
                 android:entries="@array/dom_calidad"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/lblCalidad"
                 app:layout_constraintTop_toBottomOf="@+id/txtTipoadec" />
 
@@ -530,15 +516,15 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="38dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="48dp"
+                android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/observacion"
+                android:inputType="text"
+                android:maxLength="255"
                 android:minHeight="48dp"
                 android:textColorHint="#757575"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/lblObserv"
-                app:layout_constraintTop_toBottomOf="@+id/spiCalidad"
-                android:autofillHints="" />
+                app:layout_constraintTop_toBottomOf="@+id/spiCalidad" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

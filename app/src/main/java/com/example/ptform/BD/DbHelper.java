@@ -21,20 +21,19 @@ public class DbHelper extends SQLiteOpenHelper {
         //Con etsa estrcutura se crea la base de datos y la tabla correspondiente
       sqLiteDatabase.execSQL("CREATE TABLE "+TABLE_REGISTRO + "(" +
               "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-              "elabora TEXT NOT NULL," +
-              "proyecto1 TEXT NOT NULL," +
+              "elabora VARCHAR(40) NOT NULL," +
               "fecha TEXT NOT NULL," +
-              "expediente TEXT NOT NULL," +
-              "operador TEXT NOT NULL," +
-              "proyecto TEXT NOT NULL,"+
-              "tipoInfraestructura TEXT NOT NULL,"+
-              "idInfraestructura TEXT NOT NULL,"+
-              "caracteristicas VARCHAR NOT NULL,"+
+              "expediente VARCHAR(20) NOT NULL," +
+              "operador VARCHAR(100) NOT NULL," +
+              "proyecto VARCHAR(200) NOT NULL,"+
+              "tipoInfraestructura VARCHAR(50) NOT NULL,"+
+              "idInfraestructura VARCHAR(20) NOT NULL,"+
+              "caracteristicas VARCHAR(255) NOT NULL,"+
               "estado TEXT NOT NULL,"+
               "adecuacion TEXT NOT NULL,"+
-              "tipoAdecuacion TEXT NOT NULL,"+
+              "tipoAdecuacion VARCHAR(50) NOT NULL,"+
               "calidad TEXT NOT NULL,"+
-              "observaciones VARCHAR NOT NULL,"+
+              "observaciones VARCHAR(255) NOT NULL,"+
               "esteCoordenada VARCHAR NOT NULL,"+
               "norteCoordenada VARCHAR NOT NULL)");
     }

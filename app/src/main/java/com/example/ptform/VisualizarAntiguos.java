@@ -3,14 +3,18 @@ package com.example.ptform;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.core.content.FileProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -76,10 +80,7 @@ public class VisualizarAntiguos extends AppCompatActivity {
 
     private void exportarCSV() {
         try {
-
-            /*Exporto los datos a excel , la ubicación del archivo esta en data dentro del paquete
-            de la aplicación en la carpeta android*/
-
+            //Exporto los datos a excel , la ubicación del archivo esta en data dentro del paquete de la aplicación en la carpeta android
             Workbook workbook = new HSSFWorkbook();
             Cell cell;
             CellStyle cellStyle = workbook.createCellStyle();
@@ -196,16 +197,29 @@ public class VisualizarAntiguos extends AppCompatActivity {
 
             cursorListas.close();
 
-            File file = new File(getExternalFilesDir(null),"Registros.xls");
+            File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),"Registros.xls");
             FileOutputStream outputStream;
 
             try {
-
                 outputStream = new FileOutputStream(file);
                 workbook.write(outputStream);
-                Toast.makeText(this, "Exporte exitoso", Toast.LENGTH_SHORT).show();
+                String ruta = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getAbsolutePath() +"/Registros.xls";
+                File file2 = new File(ruta);
+                if(file2.exists()){ //Archivo existe!
+                    Intent intent = new Intent(Intent.ACTION_SEND);
+                    intent.setData(Uri.parse(("mailto: ")));
+                    intent.putExtra(Intent.EXTRA_SUBJECT,"Enviando Excel");
+                    intent.putExtra(Intent.EXTRA_SUBJECT,"Adjunto informe de los registros");
+                    Uri uri = FileProvider.getUriForFile(this, "com.example.ptform.fileprovider", file2);
+                    intent.putExtra(Intent.EXTRA_STREAM, uri);
 
-            }catch (Exception e){ }
+                    startActivity(intent);
+                }else{ //Archivo NO existe!
+                    Toast.makeText(this, "Archivo no existe en la ruta "+ ruta, Toast.LENGTH_LONG).show();
+                }
+            }catch (Exception e){
+                //  Toast.makeText(this, ""+e, Toast.LENGTH_LONG).show();
+            }
         }catch (Exception e){ }
     }
 

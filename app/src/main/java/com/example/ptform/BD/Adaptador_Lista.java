@@ -46,7 +46,6 @@ public class Adaptador_Lista extends RecyclerView.Adapter<Adaptador_Lista.Pelicu
 
         //Vista de los datos en el recyclerview
         holder.txtelabora.setText(Listas.get(position).getElabora());
-        holder.txtproyecto1.setText(Listas.get(position).getProyecto1());
         holder.txtfecha.setText(Listas.get(position).getFecha());
         holder.txtexpediente.setText(Listas.get(position).getExpediente());
         holder.txtoperador.setText(Listas.get(position).getOperador());
@@ -90,7 +89,6 @@ public class Adaptador_Lista extends RecyclerView.Adapter<Adaptador_Lista.Pelicu
             super(itemView);
 
             txtelabora = itemView.findViewById(R.id.txtelabora);
-            txtproyecto1= itemView.findViewById(R.id.txtproyecto1);
             txtfecha= itemView.findViewById(R.id.txtfecha);
             txtexpediente = itemView.findViewById(R.id.txtexpediente);
             txtoperador = itemView.findViewById(R.id.txtoperador);
