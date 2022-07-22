@@ -24,7 +24,7 @@ public class DbRegistro extends  DbHelper{
         this.context = context;
     }
    //Inserto los datos enviados desde el formulario
-    public long insertarRegistro(String elabora, String proyecto1 , String fecha, String expediente, String operador, String proyecto
+    public long insertarRegistro(String elabora, String fecha, String expediente, String operador, String proyecto
             , String tipoInfraestructura, String idInfraestructura, String caracteristicas, String estado, String adecuacion
             , String tipoAdecuacion, String calidad, String observaciones,   String esteCoordenada, String norteCoordenada){
 
@@ -37,7 +37,6 @@ public class DbRegistro extends  DbHelper{
 
             ContentValues values = new ContentValues();
             values.put("elabora", elabora);
-            values.put("proyecto1", proyecto1);
             values.put("fecha", fecha);
             values.put("expediente", expediente);
             values.put("operador", operador);
@@ -82,21 +81,20 @@ public class DbRegistro extends  DbHelper{
                 bd_listas = new BD_Listas();
                 bd_listas.setId(cursorListas.getInt(0));
                 bd_listas.setElabora(cursorListas.getString(1));
-                bd_listas.setProyecto1(cursorListas.getString(2));
-                bd_listas.setFecha(cursorListas.getString(3));
-                bd_listas.setExpediente(cursorListas.getString(4));
-                bd_listas.setOperador(cursorListas.getString(5));
-                bd_listas.setProyecto(cursorListas.getString(6));
-                bd_listas.setTipoInfraestructura(cursorListas.getString(7));
-                bd_listas.setIdInfraestructura(cursorListas.getString(8));
-                bd_listas.setCaracteristicas(cursorListas.getString(9));
-                bd_listas.setEstado(cursorListas.getString(10));
-                bd_listas.setAdecuacion(cursorListas.getString(11));
-                bd_listas.setTipoAdecuacion(cursorListas.getString(12));
-                bd_listas.setCalidad(cursorListas.getString(13));
-                bd_listas.setObservaciones(cursorListas.getString(14));
-                bd_listas.setEsteCoordenada(cursorListas.getString(15));
-                bd_listas.setNorteCoordenada(cursorListas.getString(16));
+                bd_listas.setFecha(cursorListas.getString(2));
+                bd_listas.setExpediente(cursorListas.getString(3));
+                bd_listas.setOperador(cursorListas.getString(4));
+                bd_listas.setProyecto(cursorListas.getString(5));
+                bd_listas.setTipoInfraestructura(cursorListas.getString(6));
+                bd_listas.setIdInfraestructura(cursorListas.getString(7));
+                bd_listas.setCaracteristicas(cursorListas.getString(8));
+                bd_listas.setEstado(cursorListas.getString(9));
+                bd_listas.setAdecuacion(cursorListas.getString(10));
+                bd_listas.setTipoAdecuacion(cursorListas.getString(11));
+                bd_listas.setCalidad(cursorListas.getString(12));
+                bd_listas.setObservaciones(cursorListas.getString(13));
+                bd_listas.setEsteCoordenada(cursorListas.getString(14));
+                bd_listas.setNorteCoordenada(cursorListas.getString(15));
                 verListas.add(bd_listas);
 
             } while (cursorListas.moveToNext());

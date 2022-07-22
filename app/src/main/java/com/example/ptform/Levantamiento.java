@@ -43,12 +43,12 @@ public class Levantamiento extends AppCompatActivity {
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
-        tomarF = (Button) findViewById(R.id.btnTomar);
+        tomarF = findViewById(R.id.btnTomar);
 
-        lat = (EditText) findViewById(R.id.txtNorte);
-        lon = (EditText) findViewById(R.id.txtEste);
+        lat = findViewById(R.id.txtNorte);
+        lon = findViewById(R.id.txtEste);
 
-        coord = (Button) findViewById(R.id.btnRegistrar);
+        coord = findViewById(R.id.btnRegistrar);
 
         tomarF.setOnClickListener(view -> capturarDAtos ());
 
@@ -137,7 +137,7 @@ public class Levantamiento extends AppCompatActivity {
                 && TxtspiCalidad.length()>0 ){
 
             DbRegistro dbRegistro = new DbRegistro(Levantamiento.this );
-            long id = dbRegistro.insertarRegistro(Stringelabora, StringProyecto, StringFecha, Expediente , Operador ,Proyecto , Tipoinfra , Idinfra , Caracter ,
+            long id = dbRegistro.insertarRegistro(Stringelabora, StringFecha, Expediente , Operador ,Proyecto , Tipoinfra , Idinfra , Caracter ,
                     Tipoadec,  Obervaciones ,  TxtspiEstado ,  TxtspiAdecuacion , TxtspiCalidad , latitud , longitud );
             if(id>0){
 

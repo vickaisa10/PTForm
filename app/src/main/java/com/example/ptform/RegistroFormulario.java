@@ -27,7 +27,6 @@ public class RegistroFormulario extends AppCompatActivity {
         setContentView(R.layout.activity_registro_formulario);
 
         txtElabora = findViewById(R.id.txtElabora);
-        txtNomProyecto = findViewById(R.id.txtNomProyecto);
         txtFecha = findViewById(R.id.txtFecha);
 
         btnFecha = findViewById(R.id.btnFecha);
@@ -55,13 +54,11 @@ public class RegistroFormulario extends AppCompatActivity {
     public void ini(View view) {
 
         String elabora = txtElabora.getText().toString();
-        String Proyecto= txtNomProyecto.getText().toString();
         String Fecha = txtFecha.getText().toString();
 
-        if(elabora.length()>0 && Proyecto.length()>0 && Fecha.length()>0){
+        if(elabora.length()>0 && Fecha.length()>0){
             ClaseGlobal objGlobalInsert = (ClaseGlobal)getApplicationContext();
             objGlobalInsert.setElabora((elabora));
-            objGlobalInsert.setProyecto((Proyecto));
             objGlobalInsert.setFecha((Fecha));
 
             Intent ini = new Intent(this, Levantamiento.class);
